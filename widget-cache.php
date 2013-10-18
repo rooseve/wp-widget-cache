@@ -647,6 +647,7 @@ class WidgetCache
 		
 		$callback = $wp_registered_widgets [$id] ['callback_wc_redirect']; // find the real callback
 		
+
 		if (! is_callable ( $callback ))
 			return;
 		
@@ -686,7 +687,7 @@ function widget_cache_remove($id)
 function widget_cache_hook_trigger()
 {
 	global $widget_cache;
-	if (sizeof ( $widget_cache->wgcTriggers ))
+	if (isset ( $widget_cache->wgcTriggers ) && $widget_cache->wgcTriggers)
 	{
 		foreach ( $widget_cache->wgcTriggers as $wgid => $wgacts )
 		{
