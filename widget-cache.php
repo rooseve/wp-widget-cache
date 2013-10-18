@@ -41,11 +41,13 @@ class WidgetCache
 	{
 		$this->cachedir = WP_CONTENT_DIR . '/widget-cache';
 		
+		$url_info = parse_url ( site_url () );
+		
+		$shost = $this->array_element ( $url_info, 'host' );
+		$spath = $this->array_element ( $url_info, 'path' );
+		
 		//maybe got many blogs under the same source
-		if ($_SERVER ['HTTP_HOST'])
-		{
-			$this->cachedir .= '/' . $_SERVER ['HTTP_HOST'];
-		}
+		$this->cachedir .= '/' . $shost . ($spath ? '_' . md5 ( $spath ) : '');
 		
 		$this->wcache = new WCache ( $this->cachedir );
 		
