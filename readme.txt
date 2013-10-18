@@ -4,7 +4,7 @@ Donate link: https://github.com/rooseve/wp-widget-cache
 Tags: widget, sidebar, cache, caching, performance, google, wp-cache, wp-super-cache
 Requires at least: 2.5.3
 Tested up to: 3.6.1
-Stable tag: 0.26.0
+Stable tag: 0.26
 
 Cache the output of your blog widgets. Usually it will significantly reduce the SQL queries to your database and speed up your site.
 
