@@ -1,4 +1,8 @@
-wp-widget-cache
-===============
+## WP Widget Cache
 
-A wordpress cache plugin, which caches the output of blog widgets
+A **high-performance** caching plugin for WordPress, and a **plus** for WP-Cache or WP Super Cache!
+
+Please visit [here](http://wordpress.org/plugins/wp-widget-cache/) for more details.
+
+
+
