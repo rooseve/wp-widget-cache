@@ -329,7 +329,7 @@ class WidgetCache
 	{
 		$id = $_GET ["wgdel"];
 		$this->wcache->remove_group ( $id );
-		echo '<div id="widget-cache-notice" class="updated fade"><p>Delete widget cache: ' . $id . '</p></div>';
+		echo '<div id="widget-cache-notice" class="updated fade"><p>Delete widget cache: ' . esc_html($id) . '</p></div>';
 	}
 
 	function widget_cache_options_filter()
